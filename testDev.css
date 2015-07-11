@@ -1,0 +1,226 @@
+/*----------- ELEMENTS ---------*/
+
+body{
+font-family: "Roboto",sans-serif;
+color: #333;
+}
+
+
+img
+{
+
+vertical-align: middle;
+width: 60%;
+padding-left: 10%;
+
+
+}
+
+.thumbnail > img {
+    margin-right: auto;
+    margin-left: auto;
+    height: 40%;
+    padding: 0px;
+}
+a {
+    color: #337AB7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+/*-----MENU --------*/
+
+
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+.menu {
+	/*width: 550px;*/
+	float: right;
+	
+	padding-top: 20px;
+}
+
+.menu ul{
+	
+margin-top: -20px;
+padding-left: 5%;
+font-size: 8px;
+	text-align: center;
+}
+
+.menu li{
+	display: inline-block;
+	padding: 0 0;
+	
+}
+
+.menu li a {
+	text-transform: none;
+	text-decoration: none;
+	color: white;
+	display: block;
+	
+	padding: 5px ;
+	margin: 0 0;
+	text-align: center;
+}
+
+
+.boutonmenu{
+color: white;
+background-color:black;
+border: 1px ridge #000;
+cursor: pointer;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+.menu2 {
+	/*width: 550px;*/
+	float: left;	
+width: 100%;
+border-top: 3px solid #E74C3C;
+}
+
+.menu2 ul{
+	text-align: center;
+padding-top: 0.5%;
+padding-bottom: 0.5%;
+margin-left: -10%;
+}
+
+.menu2 li{
+	display: inline-block;
+	padding: 0 0;
+border-color: black;
+	
+}
+
+.menu2 li a {
+	text-transform: none;
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin: 0 0;
+	text-align: center;
+
+}
+
+section > .barmenu{
+background-color: black;
+}
+
+
+
+
+/*-----------FORMULAIRE------------*/
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 100%;
+}
+
+.input-group .form-control:not(:first-child):not(:last-child), .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child) {
+    border-radius: 0px;
+    height: 100%;
+}
+
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: -15%;
+font-size: 14px;
+}
+
+
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+
+    padding: 12px 12px 12px 12px;
+}
+
+.panel-body{
+margin-left: -20px;
+margin-right: -20px;
+}
+
+
+.panel {
+    margin-bottom: 1px;
+    background-color: #FFF;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+margin-left: -20px;
+margin-right: -20px;
+}
+
+
+.duration {
+    border-radius: 5px;
+    position: relative;
+bottom: 90px;
+left: 10px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 4px;
+    color: white;
+}
+.img-circle {
+    width: 25%;
+    height: 5%;
+    border-radius: 5px;
+    position: relative;
+bottom: 90px;
+left: 290px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 4px;
+    color: white;
+}
+
+
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 280px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+
+
+#font{
+font-size: 8px;
+}
+
+
+.button {
+    margin-bottom: 0px;
+    font-size: 0.5em;
+    color: #FFF;
+    padding: 0.5% 1%;
+}
+
+}
