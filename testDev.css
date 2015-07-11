@@ -259,6 +259,22 @@ font-size: 8px;
 article > h6 {
     font-size: 7px;
 }
+
+.col-sm-10, .col-xs-10 {
+margin-left: 30%;
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 8px;
+}
+
+label{
+font-size: 8px;
+}
+
+
 }
 
 
