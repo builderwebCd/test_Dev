@@ -50,6 +50,10 @@ a {
     color: #FFF;
 }
 
+.text-center{
+text-align: center;
+}
+
 
 .description{
 font-size: 10px;
@@ -253,6 +257,7 @@ color: #000;
     color: white;
 text-shadow: 1px 1px 1px white;
 }
+
 
 
 /*----------------------------SUPPORTS MEDIAS ----------------------*/
