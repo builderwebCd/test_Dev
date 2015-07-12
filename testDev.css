@@ -27,8 +27,33 @@ a {
     font-size: 14px;
 }
 
+.titre
+{
+
+    background-color: #FFF;
+    border: 5px solid white;
+    margin-top: -20px;
+
+}
+
+.img-circle {
+    width: 19%;
+    height: 15%;
+    border-radius: 5px;
+    position: relative;
+    bottom: 65px;
+    left: 50px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 4px;
+    color: #FFF;
+}
 
 
+.description{
+font-size: 10px;
+}
 /*-----MENU --------*/
 
 
@@ -69,6 +94,12 @@ ul{
 }
 
 
+#photoMarg{
+margin-top: -180px;
+}
+#photoMarg2{
+margin-top: -180px;
+}
 
 
 
@@ -167,44 +198,32 @@ label {
 }
 
 
+
 .duration {
     border-radius: 5px;
     position: relative;
-    bottom: 90px;
+    bottom: 190px;
     left: 10px;
-    font-size: 0.8em;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 5px 4px;
-    color: white;
-}
-
-
-.duration2 {
-    border-radius: 5px;
-    position: relative;
-    bottom: 100px;
-    font-size: 0.8em;
-    text-align: center;
-    padding: 5px 5px 4px;
-    left: 217px;
-    background: transparent none repeat scroll 0% 0%;
-    color: #000;
-}
-
-.img-circle {
-    width: 19%;
-    height: 15%;
-    border-radius: 5px;
-    position: relative;
-    bottom: 155px;
-    left: 290px;
     font-size: 0.8em;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 5px 4px;
     color: #FFF;
 }
+
+.duration2 {
+border-radius: 5px;
+position: relative;
+bottom: 100px;
+font-size: 0.8em;
+text-align: center;
+padding: 5px 5px 4px;
+left: 225px;
+background: transparent none repeat scroll 0% 0%;
+color: #000;
+
+}
+
 
 
 .carousel-caption {
@@ -218,9 +237,15 @@ text-shadow: 1px 1px 1px white;
 }
 
 
-/*-----------SUPPORTS MEDIAS ------*/
+/*----------------------------SUPPORTS MEDIAS ----------------------*/
+
+
+
+/*-----------tablettes ------*/
+
 
 @media screen and (max-width: 992px) {
+
 
 
 #font{
@@ -265,7 +290,7 @@ ul {
 .duration {
     border-radius: 5px;
     position: relative;
-    bottom: 105px;
+    bottom:125px;
     left: 10px;
     font-size: 8px;
     text-align: center;
@@ -297,6 +322,167 @@ label{
 
 
 
+
+/*-----------desktop(992min) ------*/
+
+
+
+@media screen and (min-width: 992px)
+ {
+
+
+
+.duration2 {
+    position: relative;
+    bottom: 60px;
+    left: 120px;
+}
+}
+
+
+/*-----------desktop(992min) ------*/
+
+
+
+@media screen and (max-width: 992px)
+ {
+
+
+
+.duration2 {
+    position: relative;
+    bottom: 55px;
+    left: 120px;
+}
+
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 630px;
+}
+
+#photoMarg{
+margin-top: -120px;
+}
+#photoMarg2{
+margin-top: -120px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*-----------ecran larges(1200min) ------*/
+
+
+@media screen and (min-width: 1200px)
+{
+
+
+.img-circle {
+    width: 19%;
+    height: 15%;
+    border-radius: 5px;
+    position: relative;
+    bottom: 65px;
+    left: 50px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 4px;
+    color: #FFF;
+}
+.duration2 {
+    position: relative;
+    bottom: 80px;
+    left: 220px;
+}
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+    padding-bottom: 400px;
+}
+
+
+}
+
+
+
+
+
+
+/*-----------Ecrans larges (1700min) ------*/
+@media screen and (min-width: 1700px)
+{
+
+
+
+.duration2 {
+    position: relative;
+    bottom: 90px;
+    left: 310px;
+}
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+    padding-bottom: 600px;
+}
+
+}
+
+
+
+
+
+
+
+/*-----------smarthpones ------*/
+
+
+@media screen and (max-width: 768px) {
+
+
+
+.description{
+font-size: 5px;
+}
+
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 230px;
+}
+
+#photoMarg{
+margin-top: -50px;
+}
+
+#photoMarg2{
+margin-top: -50px;
+}
+
+.img-circle {
+    width: 19%;
+    height: 15%;
+    border-radius: 5px;
+    position: relative;
+    bottom: 35px;
+    left: 20px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 4px;
+    color: #FFF;
+}
+}
 
 
 
