@@ -54,7 +54,17 @@
 				//constructeur de la carte qui prend en paramêtre le conteneur HTML
 				//dans lequel la carte doit s'afficher et les options
 				var carte = new google.maps.Map(document.getElementById("carte"), options);
-			}
+		
+
+
+	var marqueur = new google.maps.Marker({
+		position: new google.maps.LatLng(48.880973, 2.355367),
+
+		map: carte
+	});
+
+	}
+
 		</script>
 
 
@@ -83,35 +93,36 @@
 
 
 
-               <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2">
-                   <img src="logo.png" alt="logo" /> 
+               <div class="col-lg-2  col-md-2 col-sm-3 col-xs-1">
+                   <img src="logo.png" alt="logo" class="logo" /> 
 
                </div> <!-- end col2 -->
 
 
 
-               <div class="col-lg-1 col-sm-2 col-md-2 col-xs-5">
+               <div class="col-lg-1 col-sm-3 col-md-2 col-xs-3">
                    <button class="btn btn-primary" type="reset" name="reset" value="Effacer" style="font-size: 10px; "> <span class="glyphicon glyphicon-remove-sign" ></span> Rechercher</button> 
 
 
                </div> <!-- end col-lg-1-->
 
-               <div class="col-lg-1 col-sm-2 col-md-2 col-xs-5">
+               <div class="col-lg-1 col-sm-3 col-md-2 col-xs-3">
                    <button class="btn btn-primary" type="submit" name="send" value="Envoyer" style="font-size: 10px;background-color: #E74C3C; border-color: #E74C3C; " > <span class="glyphicon glyphicon-ok-sign"></span> Publier une annonce</button>
 
 
 
                </div> <!-- end col-lg-1-->
 
-               <div class="col-lg-3  col-md-3 col-sm-4 col-xs-7">
+               <div class="col-lg-3  col-md-3 col-sm-3 col-xs-5">
 
 
                    <nav class="menu">
                        <ul>
                            <li> <a href="#"> <img src="fr.jpg"  style="height: 20px; width: 40px; "/> </a></li>
-                           <li><a href="#"><img src="fr.jpg"  style="height: 20px; width: 40px;"/> </a></li>
-                           <li><a href="#"><img src="fr.jpg"  style="height: 20px; width: 40px;"/>  </a></li>
-                           <a href="#formulaire"><li>  <i class="glyphicon glyphicon-collapse-down " ></i>Name</li></a>
+                           
+                         <a href="#">  <li>  <i class="glyphicon glyphicon-heart" style="color:#E74C3C;"></i>  </li> </a> 
+                         <a href="#">  <li>  <i class="glyphicon glyphicon-envelope"></i>  </li> </a> 
+                           <a href="#formulaire"><li> Username  <i class="glyphicon glyphicon-collapse-down " ></i> </li></a>
                    </ul>
                 </nav>
 
@@ -140,91 +151,92 @@
 
 
        </header>
+
+
+
 <div class="container-fluid">
-<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style=" overflow: visible;overflow: scroll;">
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style=" overflow: visible;overflow: scroll;">
 
-   <div class="row">
+       <div class="row">
+          <label style="    margin-top:2.5%;">Location</label>
 
-       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-           <label style="    margin-top: 10%;">Location</label>
-       </div> <!-- end col 4-->
-
-       <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-1 col-xs-8 col-xs-offset-1">
+       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
            <div class="input-group">
                <span class="input-group-addon" id="basic-addon1">@</span>
                    <input type="text" class="form-control" placeholder="Ou voulez vous allez ?" aria-describedby="basic-addon1">
            </div> <!-- end input grp-->
-       </div> <!-- end col 8-->
+       </div> <!-- end col 10-->
 
 </div> <!--end row -->
 
 <div class="row">
-   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <label style="    margin-top: 10%;">Options</label>
-   </div> <!-- end col 4-->
 
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <label style="    margin-top: 2.5%;">Options</label>
+
+
+<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1  col-xs-5 col-xs-offset-1 ">
        <div class="input-group">
            <span class="input-group-addon" id="basic-addon1">$</span>
                <input type="text" class="form-control" placeholder="Prix max"  aria-label="Amount (to the nearest dollar)">
        </div> <!-- end input grp-->
 
-   </div> <!-- end col 4-->
+   </div> <!-- end col 5-->
 
 
-<div class="col-lg-4 col-md-4 col-sm-4  col-xs-4">
+<div class="col-lg-5 col-md-5 col-sm-5  col-xs-5">
        <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
                <input type="text" class="form-control" placeholder="Surface min" aria-describedby="basic-addon1">
        </div> <!-- end input grp-->
-    </div> <!-- end col 4-->
+    </div> <!-- end col 5-->
 
 
 </div> <!-- end row-->
 
 
 <div class="row">
-
-   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" >
-
        
 
-           <label style="    margin-bottom: -10%;padding-top: 20px;">Type d'annonces</label>
+           <label style="    margin-bottom: 2.5%;padding-top: 20px; margin-right:1%"">Type d'annonces</label>
 
 
-      </div><!-- end lg4-->
 
-
-     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" >
  
-                 <div class="col-lg-4 col-md-4 col-md-12 col-xs-12" >
+                 <div class="col-lg-10 col-md-10 col-md-10 col-xs-10" >
+
+
+ 
+                 <div class="col-lg-4 col-md-4 col-md-8 col-xs-8" >
                     <div class="input-group">
                        <span class="input-group-addon">
                            <input type="checkbox" aria-label="">
-<i class="glyphicon glyphicon-home "  > </i> 
+                              <i class="glyphicon glyphicon-home "  > </i> 
                        </span>
                           <input type="text" class="form-control" aria-label="" placeholder="Logement">
                           </div><!-- /input-group -->
 
 
                 </div><!-- /Lg4-->
-                                 <div class="col-lg-4 col-md-4 col-sm12 col-xs-12">
+
+
+                                 <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
 
                    <div class="input-group">
                       <span class="input-group-addon">
                           <input type="checkbox" aria-label="">
-<i class="glyphicon glyphicon-user "  > </i>
+                              <i class="glyphicon glyphicon-user "  > </i>
                     </span>
                         <input type="text" class="form-control" aria-label="..." placeholder="Location">
                    </div><!-- /input-group -->
 
                </div><!-- /.col-lg-4 -->
 
-                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+          <div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
                 <div class="input-group">
                    <span class="input-group-addon">
                       <input type="checkbox" aria-label="...">
-<i class="glyphicon glyphicon-bed "  > </i>
+                           <i class="glyphicon glyphicon-bed "  > </i>
                  </span>
                       <input type="text" class="form-control" aria-label="..." placeholder="Chambre chez l'habitant">
                </div><!-- /input-group -->
@@ -232,19 +244,18 @@
            </div> <!-- /.col-lg-4 -->
 
 
-
+           </div> <!-- /.col-lg-12 -->
            
-   </div> <!-- col-lg-8 -->
+
 
 
 
 </div> <!-- row -->
 <div class="row">
-<div class="panel panel-primary" style="border-color: #EEE;"> 
+          <div class="panel panel-primary" style="border-color: #EEE;"> 
 
-   <a href=""><h3 class="panel-title"><i></i><p class="text-center"> <i class="glyphicon glyphicon-search" ></i>Plus de filtres</p></h3></a>
-</div> <!-- end panel primary -->
-
+                 <a href=""><h3 class="panel-title"><i></i><p class="text-center"> <i class="glyphicon glyphicon-search" ></i>Plus de filtres</p></h3></a>
+           </div> <!-- end panel primary -->
 </div> <!--end row -->
 
 
@@ -255,26 +266,26 @@
 
 
 
-   <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="padding-top: 10px;background-color:#F0F0F0;">  
+<article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="padding-top: 10px;background-color:#F0F0F0;">  
 
 
 
-      <div class="row">       
+   <div class="row">       
        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 " style="height: 80%";>    
            <a href="A1.jpg" class="thumbnail">
               <h6 class="carousel-caption" style="color:#333;text-shadow: 1px 1px 1px white;">Chambre chez l'habitant <i class="glyphicon glyphicon-heart "    style="color:#E74C3C;"  ></i> </h6>
              <img src="A1.jpg" style="height: 40%;width: 100%;" alt="" class="carouselimag" />   
            </a> 
-<div class="titre" style="background-color: white;">
+             <div class="titre" style="background-color: white;">
             <h6 class="description" style="color: #333 ;text-shadow: 1px 1px 1px white;display:block; position: relative; bottom: 15px;"> 12 m² meublé Ile-De-France
- <br/> Disponible a partir du 10/07/2015 <div style="text-align:right;">  <img class="img-circle" alt="" src="32x32.gif" /> Etudiant </div></h6>                       
-</div> <!-- end div titre -->
+                  <br/> Disponible a partir du 10/07/2015 <div style="text-align:right;">  <img class="img-circle" alt="" src="32x32.gif" /> Etudiant </div></h6>                       
+             </div> <!-- end div titre -->
 
 
                                <span class="duration">1500$</span>
                                <br/>
 
-       </div>  <!-- end col  lg-6-->
+</div>  <!-- end col  lg-6-->
        
                          
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 "  style="height: 80%";>      
@@ -285,8 +296,8 @@
                      </a>   
                      <div class="titre" style="background-color: white;">
             <h6 class="description" style="color: #333 ;text-shadow: 1px 1px 1px white;display:block; position: relative; bottom: 15px;"> 12 m² meublé Ile-De-France
- <br/> Disponible a partir du 10/07/2015 <div style="text-align:right;">  <img class="img-circle" alt="" src="32x32.gif" /> Etudiant </div></h6>                       
-</div> <!-- end div titre -->
+                 <br/> Disponible a partir du 10/07/2015 <div style="text-align:right;">  <img class="img-circle" alt="" src="32x32.gif" /> Etudiant </div></h6>                       
+                    </div> <!-- end div titre -->
 
 
                                <span class="duration">1500$</span>
@@ -307,8 +318,8 @@
 
           <div class="titre" style="background-color: white;">
             <h6 class="description" style="color: #333 ;text-shadow: 1px 1px 1px white;display:block; position: relative; bottom: 15px;"> 12 m² meublé Ile-De-France
- <br/> Disponible a partir du 10/07/2015 <div style="text-align:right;">  <img class="img-circle" alt="" src="32x32.gif" /> Etudiant </div></h6>                       
-</div> <!-- end div titre -->
+               <br/> Disponible a partir du 10/07/2015 <div style="text-align:right;">  <img class="img-circle" alt="" src="32x32.gif" /> Etudiant </div></h6>                       
+          </div> <!-- end div titre -->
 
 
                                <span class="duration">1500$</span>
@@ -330,8 +341,8 @@
            </a>   
              <div class="titre" style="background-color: white;">
             <h6  class="description" style="color: #333 ;text-shadow: 1px 1px 1px white;display:block; position: relative; bottom: 15px;"> 12 m² meublé Ile-De-France
- <br/> Disponible a partir du 10/07/2015 <div style="text-align:right;">  <img class="img-circle" alt="" src="32x32.gif" /> Etudiant </div></h6>                       
-</div> <!-- end div titre -->
+                <br/> Disponible a partir du 10/07/2015 <div style="text-align:right;">  <img class="img-circle" alt="" src="32x32.gif" /> Etudiant </div></h6>                       
+            </div> <!-- end div titre -->
 
 
                                <span class="duration">1500$</span>
@@ -351,24 +362,24 @@
 
 
 
-</article>  <!-- end article-lg-12 -->
+    </article>  <!-- end article-lg-12 -->
 
 
 
 
 
-</div> <!-- end col-lg-9 -->
+   </div> <!-- end col-lg-9 -->
 
 
 
 
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 
 
-<div id="carte" style="width:100%; height:100%"></div>
+        <div id="carte" style="width:100%; height:100%"></div>
 
 
-</div>
+   </div>
 
 
 
